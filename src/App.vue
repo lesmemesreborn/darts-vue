@@ -5,18 +5,20 @@
       :currentRound="currentRound"
       :currentScore="currentScore"
     />
-    <ScoreInput />
+    <Scores />
   </div>
 </template>
 
 <script>
 import Scoreboard from "./components/Scoreboard.vue";
 import ScoreInput from "./components/ScoreInput.vue";
+import Scores from './components/Scores.vue'
 
 export default {
   name: "App",
   components: {
     Scoreboard,
+    Scores
   },
   data() {
     return {
@@ -35,6 +37,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
+
 </style>
+
+
